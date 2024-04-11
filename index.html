@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="myDiv">
+
+        <h2>Calculator <img src="moon.png" alt="mode-icon" id="icon"></h2>
+
+        <div id="calculator">
+            <input type="text" id="display" readonly>
+
+            <button class="special" id="allClear">C</button>
+            <button class="special" id="del">DL</button>
+            <button class="special" onclick="element('.')">.</button>
+            <button class="special" onclick="element('/')">/</button>
+
+            <button onclick="element('7')">7</button>
+            <button onclick="element('8')">8</button>
+            <button onclick="element('9')">9</button>
+            <button onclick="element('*')" class="special">*</button>
+
+            <button onclick="element('4')">4</button>
+            <button onclick="element('5')">5</button>
+            <button onclick="element('6')">6</button>
+            <button onclick="element('-')" class="special">-</button>
+
+            <button onclick="element('1')">1</button>
+            <button onclick="element('2')">2</button>
+            <button onclick="element('3')">3</button>
+            <button onclick="element('+')" class="special">+</button>
+
+            <button onclick="element('00')">00</button>
+            <button onclick="element('0')">0</button>
+            <button id="equal" class="special">=</button>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
